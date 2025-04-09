@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize AOS (Animate on Scroll)
   if (typeof AOS !== "undefined") {
     AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
-      once: false,
+      duration: 400,
+      easing: "ease-out",
+      once: true,
       mirror: false,
+      offset: 50,
+      delay: 0
     })
   }
 
