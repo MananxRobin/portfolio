@@ -2124,16 +2124,23 @@ h6 {
 }
 
 
+
+
+/* leetcode */
+
+
 :root {
+/* 
   --font-playfair: "Playfair Display", serif;
   --font-space: "Space Grotesk", sans-serif;
 
-  /* Light theme colors */
-  --background: #f8f8f8;
+  Light theme colors  --background: #f8f8f8;
   --foreground: #0a0a0a;
   --border: #dddddd;
   --muted-foreground: #555555;
   --destructive: #ff0000;
+ */
+
 
   /* LeetCode colors */
   --leetcode-easy: #00b8a3;
@@ -2484,3 +2491,4 @@ h6 {
 .ml-2 {
   margin-left: 8px;
 }
+
