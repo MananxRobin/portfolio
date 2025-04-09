@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manan Ambaliya - Portfolio</title>
+    <meta name="description" content="Portfolio of Manan Ambaliya - Data Scientist and Machine Learning Engineer">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo" id="typed-logo">Manan Ambaliya</div>
+
+            <!-- Desktop navigation -->
+            <nav class="desktop-nav">
+                <a href="#home" class="nav-item active">
+                    <span class="nav-number">01</span>
+                    <span class="nav-text">Home</span>
+                </a>
+                <a href="#about" class="nav-item">
+                    <span class="nav-number">02</span>
+                    <span class="nav-text">About</span>
+                </a>
+                <a href="#education" class="nav-item">
+                    <span class="nav-number">03</span>
+                    <span class="nav-text">Education</span>
+                </a>
+                <a href="#work" class="nav-item">
+                    <span class="nav-number">04</span>
+                    <span class="nav-text">Work</span>
+                </a>
+                <a href="#projects" class="nav-item">
+                    <span class="nav-number">05</span>
+                    <span class="nav-text">Projects</span>
+                </a>
+                <a href="#skills" class="nav-item">
+                    <span class="nav-number">06</span>
+                    <span class="nav-text">Skills</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <span class="nav-number">07</span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Theme toggle -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="moon" class="light-icon"></i>
+                    <i data-lucide="sun" class="dark-icon"></i>
+                </button>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="mobile-menu-button" aria-label="Open menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2>Navigation</h2>
+            <button id="close-menu-button" aria-label="Close menu">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-items">
+            <a href="#home" class="mobile-nav-item active">
+                <span class="nav-number">01</span>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="mobile-nav-item">
+                <span class="nav-number">02</span>
+                <span>About</span>
+            </a>
+            <a href="#education" class="mobile-nav-item">
+                <span class="nav-number">03</span>
+                <span>Education</span>
+            </a>
+            <a href="#work" class="mobile-nav-item">
+                <span class="nav-number">04</span>
+                <span>Work</span>
+            </a>
+            <a href="#projects" class="mobile-nav-item">
+                <span class="nav-number">05</span>
+                <span>Projects</span>
+            </a>
+            <a href="#skills" class="mobile-nav-item">
+                <span class="nav-number">06</span>
+                <span>Skills</span>
+            </a>
+            <a href="#contact" class="mobile-nav-item">
+                <span class="nav-number">07</span>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="mobile-menu-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/manan-ambaliya-65806217a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="mailto:mananambaliya7010@gmail.com" aria-label="Email">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating menu (desktop) -->
+    <div class="floating-menu">
+        <a href="#home" class="floating-menu-item active">
+            <span class="floating-menu-text">Home</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#about" class="floating-menu-item">
+            <span class="floating-menu-text">About</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#education" class="floating-menu-item">
+            <span class="floating-menu-text">Education</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#work" class="floating-menu-item">
+            <span class="floating-menu-text">Work</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#projects" class="floating-menu-item">
+            <span class="floating-menu-text">Projects</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#skills" class="floating-menu-item">
+            <span class="floating-menu-text">Skills</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+        <a href="#contact" class="floating-menu-item">
+            <span class="floating-menu-text">Contact</span>
+            <span class="floating-menu-dot"></span>
+        </a>
+    </div>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="rotating-titles">
+                        <span class="rotating-title active">Data Scientist • ML Engineer • Problem-Solver</span>
+                    </div>
+                    <h1 class="hero-title" id="typed-hero">Manan Ambaliya</h1>
+                    <p class="hero-question" id="typed-question"></p>
+                    <p class="hero-description" id="typed-description"></p>
+                    
+                    <div class="hero-buttons" style="margin-top: 30px; display: flex; gap: 20px; flex-wrap: wrap;">
+                        <a href="#projects" class="hero-button">
+                            <i data-lucide="folder-open" class="button-icon"></i>
+                            Explore my work
+                        </a>
+                        <a href="#contact" class="hero-button">
+                            <i data-lucide="mail" class="button-icon"></i>
+                            Get in touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>Data Science. Machine Learning. Full Stack Development.</span>
+                    <span>Data Science. Machine Learning. Full Stack Development.</span>
+                    <span>Data Science. Machine Learning. Full Stack Development.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">About</h2>
+                    <h3 class="section-title">My Story</h3>
+                </div>
+                <div class="about-content">
+                    <div class="about-image-container" data-aos="fade-right" data-aos-delay="200">
+                        <div class="about-image">
+                            <img src="/Users/manan/Downloads/profile_photo.heic" alt="Manan Ambaliya">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="interactive-quote">
+                            <span class="quote-word">Create</span>
+                            <span class="quote-word">Explore</span>
+                            <span class="quote-word">Innovate</span>
+                            <span class="quote-word">Solve</span>
+                        </div>
+                    </div>
+                    <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+                        <p>
+                            I am a passionate Data Scientist and Machine Learning Engineer with a strong foundation in computer
+                            engineering. My journey began with a fascination for how data can transform our understanding of
+                            complex problems and lead to innovative solutions.
+                        </p>
+                        <p>
+                            Currently pursuing my Master's in Data Science at the University of Maryland, I combine theoretical
+                            knowledge with practical applications to develop data-driven solutions that make a real impact.
+                        </p>
+                        <p>
+                            My experience spans from developing predictive models for loan eligibility to creating automated sales
+                            reporting systems that significantly improved business operations. I thrive on challenges that require
+                            analytical thinking and creative problem-solving.
+                        </p>
+                        <p>
+                            I believe in the power of continuous learning and pushing the boundaries of what's possible with data
+                            science and machine learning technologies.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                                <p class="stat-value">1+</p>
+                                <p class="stat-label">Years Experience</p>
+                            </div>
+                            <div class="stat" data-aos="fade-up" data-aos-delay="500">
+                                <p class="stat-value">15+</p>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat" data-aos="fade-up" data-aos-delay="600">
+                                <p class="stat-value">1</p>
+                                <p class="stat-label">Publications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">Education</h2>
+                    <h3 class="section-title">Academic Background</h3>
+                </div>
+                <div class="education-list">
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="education-grid">
+                            <div class="education-meta">
+                                <p class="education-period">2024 - Present</p>
+                                <h4 class="education-degree">Master of Science in Data Science</h4>
+                                <p class="education-institution">University of Maryland, College Park</p>
+                            </div>
+                            <div class="education-content">
+                                <div class="education-icon">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <p class="education-description">
+                                    Coursework includes Probability & Statistics, Principles of Data Science, Principles of Machine
+                                    Learning, Data Representation and Modeling, Big Data Systems, Algorithms for Data Science, Deep
+                                    Learning, Statistical Data Analysis of Multiple Measures, and Big Data Analytics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="education-grid">
+                            <div class="education-meta">
+                                <p class="education-period">Summer 2023</p>
+                                <h4 class="education-degree">Student Exchange Program</h4>
+                                <p class="education-institution">Laurentian University, Canada</p>
+                            </div>
+                            <div class="education-content">
+                                <div class="education-icon">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <p class="education-description">
+                                    Participated in a summer internship program in computer engineering, working on projects related
+                                    to Diabetes Prediction and Loan Eligibility Prediction using machine learning algorithms under the
+                                    supervision of Dr. Kalpdrum Passi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="education-grid">
+                            <div class="education-meta">
+                                <p class="education-period">2020 - 2024</p>
+                                <h4 class="education-degree">Bachelor of Engineering in Computer Engineering</h4>
+                                <p class="education-institution">Gujarat Technological University, Ahmedabad</p>
+                            </div>
+                            <div class="education-content">
+                                <div class="education-icon">
+                                    <i data-lucide="graduation-cap"></i>
+                                </div>
+                                <p class="education-description">
+                                    Graduated with a CGPA of 3.7/4. Coursework included Machine Learning, Artificial Intelligence,
+                                    Information Security, Data Mining, Data Visualization, Theory of Computation, Python for Data
+                                    Science, Data Structures, and Mathematics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="section work-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">Experience</h2>
+                    <h3 class="section-title">Professional Journey</h3>
+                </div>
+                <div class="experience-list">
+                    <div class="experience-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="experience-grid">
+                            <div class="experience-meta">
+                                <p class="experience-period">December 2024 - Present</p>
+                                <h4 class="experience-title">Aqua Tech On-Campus Part Time</h4>
+                                <p class="experience-company">University of Maryland</p>
+                            </div>
+                            <div class="experience-content">
+                                <div class="experience-icon">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <p class="experience-description">
+                                    Supporting the setup, operation, and breakdown of all aquatics event equipment, including timing
+                                    systems, scoreboards, sound systems, and pool configurations. Assisting with troubleshooting
+                                    operational issues during events, maintaining equipment, and enforcing safety rules. Responding to
+                                    emergencies with CPR/AED and First Aid when required.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="experience-grid">
+                            <div class="experience-meta">
+                                <p class="experience-period">January 2024 - July 2024</p>
+                                <h4 class="experience-title">Machine Learning Engineer Intern</h4>
+                                <p class="experience-company">Acodesoft Technologies, Surat</p>
+                            </div>
+                            <div class="experience-content">
+                                <div class="experience-icon">
+                                    <i data-lucide="database"></i>
+                                </div>
+                                <p class="experience-description">
+                                    Streamlined ML training, leading to significant cost reductions. Analyzed a $3000/month GPU
+                                    request for ML model training and optimized performance by shifting Random Forest training to
+                                    multi-core CPU, eliminating cross-validation for neural networks, and introducing Optuna for
+                                    hyper-parameter optimization. Achieved $36,000/year cost savings while reducing training time and
+                                    compute resource consumption.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="experience-grid">
+                            <div class="experience-meta">
+                                <p class="experience-period">July 2023 - August 2023</p>
+                                <h4 class="experience-title">Summer Intern</h4>
+                                <p class="experience-company">Laurentian University, Canada</p>
+                            </div>
+                            <div class="experience-content">
+                                <div class="experience-icon">
+                                    <i data-lucide="briefcase"></i>
+                                </div>
+                                <p class="experience-description">
+                                    Worked on a Diabetes Prediction project using Machine Learning algorithms, supervised by Dr.
+                                    Kalpdrum Passi. Additionally, completed a summer internship project focused on Loan Eligibility
+                                    Prediction, also under Dr. Kalpdrum Passi's supervision at Laurentian University.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="experience-grid">
+                            <div class="experience-meta">
+                                <p class="experience-period">Jan 2023 - June 2023</p>
+                                <h4 class="experience-title">Data Analyst Intern</h4>
+                                <p class="experience-company">Ambition Pharma, Ahmedabad</p>
+                            </div>
+                            <div class="experience-content">
+                                <div class="experience-icon">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <p class="experience-description">
+                                    Developed an automated sales reporting system using Python and SQL, which reduced report
+                                    generation time by 70% from 4 hours to 1.2 hours and cut data entry errors by 90%. Created
+                                    interactive dashboards in Tableau, leading to a 15% increase in quarterly sales, from $2.5 million
+                                    to $2.875 million. This achievement improved operational efficiency and significantly enhanced
+                                    decision-making for the sales team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume-download" data-aos="fade-up" data-aos-delay="500">
+                    <a href="https://drive.google.com/file/d/10zPxGBw5K1e6YzZ_QN4UNPKJ1NqG1DUY/view?usp=share_link" class="btn btn-outline" id="download-resume" target="_blank" rel="noopener noreferrer">
+                        <span>Download Full Resume</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">Projects</h2>
+                    <h3 class="section-title">Featured Work</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Energy Demand Forecasting">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">ML Project</h4>
+                            <h3 class="project-title">Energy Demand Forecasting</h3>
+                            <p class="project-description">
+                                Computed AI models for electricity price prediction, improving forecast accuracy by 15% over Spanish
+                                TSO's 24-hour predictions.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ML</span>
+                                <span class="tag">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2788&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="HR Automation">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">AI/ML Project</h4>
+                            <h3 class="project-title">HR Automation</h3>
+                            <p class="project-description">
+                                Designed an AI-powered automated resume parsing & candidate selection recruitment system, reducing
+                                the screening time by 50%.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Smart Agriculture Dashboard">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">Full Stack Project</h4>
+                            <h3 class="project-title">Smart Agriculture Dashboard</h3>
+                            <p class="project-description">
+                                Developed a comprehensive dashboard for agricultural data visualization and decision support,
+                                integrating IoT sensor data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">IoT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Voice-Integrated AWS System">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">Cloud Project</h4>
+                            <h3 class="project-title">Voice-Integrated AWS System</h3>
+                            <p class="project-description">
+                                Engineered a serverless voice recognition system on AWS, reducing operational costs by 25% while
+                                maintaining high accuracy.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">Serverless</span>
+                                <span class="tag">Voice AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Software Developer Salary Prediction">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">ML Project</h4>
+                            <h3 class="project-title">Software Developer Salary Prediction</h3>
+                            <p class="project-description">
+                                Developed a machine learning model to predict software developer salaries based on experience,
+                                skills, and location.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ML</span>
+                                <span class="tag">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300" alt="AI Web Scraper">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">Full Stack Project</h4>
+                            <h3 class="project-title">AI Web Scraper</h3>
+                            <p class="project-description">
+                                Built a full-stack AI-powered web scraper using Scrapy, BeautifulSoup, and LLaMA 2 from Hugging Face
+                                to extract and analyze structured data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">LLaMA 2</span>
+                                <span class="tag">Scrapy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Loan Defaulter Classification">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">ML Project</h4>
+                            <h3 class="project-title">Loan Defaulter Classification</h3>
+                            <p class="project-description">
+                                Built a classification model to predict loan defaults using Logistic Regression, Decision Trees, and
+                                XGBoost with SMOTE for imbalanced data.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ML</span>
+                                <span class="tag">Flask</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300" alt="Nearby Parking System">
+                            <div class="project-overlay">
+                                <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" class="btn btn-primary view-project-btn">
+                                    View Project <i data-lucide="external-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h4 class="project-category">ML Project</h4>
+                            <h3 class="project-title">Nearby Parking System</h3>
+                            <p class="project-description">
+                                Designed and implemented a machine learning model that optimized parking space allocation, resulting
+                                in a 40% increase in utilization and reducing average user search time for parking to under 5
+                                minutes.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ML</span>
+                                <span class="tag">Mobile App</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-projects" data-aos="fade-up" data-aos-delay="900">
+                    <a href="https://github.com/MananxRobin" target="_blank" class="btn btn-ghost" rel="noreferrer">
+                        <span>View More Projects on GitHub</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">Skills</h2>
+                    <h3 class="section-title">Technical Expertise</h3>
+                </div>
+                <div class="skills-container" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skills-categories">
+                        <button class="skill-category-btn active" data-category="data-science">Data Science</button>
+                        <button class="skill-category-btn" data-category="web-development">Web Development</button>
+                        <button class="skill-category-btn" data-category="cloud-devops">Cloud & DevOps</button>
+                        <button class="skill-category-btn" data-category="languages">Languages</button>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skills-grid">
+                            <!-- Skills will be dynamically populated by JavaScript -->
+                        </div>
+                        <div class="skill-details">
+                            <div class="skill-details-placeholder">
+                                <p class="skill-details-title">Select a skill to view details</p>
+                                <p class="skill-details-subtitle">Click on any skill from the left panel to see more information about my expertise and experience.</p>
+                            </div>
+                            <div class="skill-details-content" style="display: none;">
+                                <h3 class="skill-details-name"></h3>
+                                <p class="skill-details-category"></p>
+                                <div class="skill-details-proficiency">
+                                    <div class="skill-details-proficiency-header">
+                                        <span>Proficiency</span>
+                                        <span class="skill-details-proficiency-value"></span>
+                                    </div>
+                                    <div class="skill-details-proficiency-bar">
+                                        <div class="skill-details-proficiency-progress"></div>
+                                    </div>
+                                </div>
+                                <p class="skill-details-description"></p>
+                                <button class="skill-details-back">
+                                    <span>Back to all skills</span>
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="leetcode-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-subtitle">Problem Solving</h2>
+        <h3 class="section-title">LeetCode Journey</h3>
+      </div>
+      
+      <div class="leetcode-progress">
+        <!-- Loading state will show initially -->
+        <div id="leetcode-loading" class="leetcode-loading">
+          <div class="leetcode-loading-spinner"></div>
+          <p>Loading LeetCode stats...</p>
+        </div>
+        
+        <!-- Error state will be shown if API fails -->
+        <div id="leetcode-error" class="leetcode-error" style="display: none;">
+          <!-- 
+<div class="leetcode-error-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <h3 class="leetcode-error-title">Error Loading Data</h3>
+          <p id="leetcode-error-message" class="leetcode-error-message">Failed to fetch LeetCode data</p>
+          <p class="leetcode-error-note">Using cached data instead. LeetCode API access may be restricted.</p>
+          <button id="leetcode-retry-button" class="leetcode-retry-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+            </svg>
+            Retry
+          </button>
+ -->
+        </div>
+        
+        <!-- Content will be shown when data is loaded -->
+        <div id="leetcode-content" class="leetcode-content" style="display: none;">
+          <div class="leetcode-header">
+            <div class="leetcode-logo">
+              <svg viewBox="0 0 24 24" fill="currentColor" height="36" width="36">
+                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.319-4.38c.467-.467 1.125-.645 1.837-.645s1.357.195 1.823.662l2.697 2.606c.514.515 1.365.497 1.9-.038.535-.536.553-1.387.039-1.901l-2.609-2.636a5.055 5.055 0 00-2.445-1.337l2.467-2.503c.516-.514.498-1.366-.037-1.901-.535-.535-1.387-.552-1.902-.038l-10.1 10.101c-.981.982-1.494 2.337-1.494 3.835 0 1.498.513 2.895 1.494 3.875l4.347 4.361c.981.979 2.337 1.452 3.834 1.452s2.853-.512 3.835-1.494l2.609-2.637c.514-.514.496-1.365-.039-1.9s-1.386-.553-1.899-.039zM20.811 13.01H10.666c-.702 0-1.27.604-1.27 1.346s.568 1.346 1.27 1.346h10.145c.701 0 1.27-.604 1.27-1.346s-.569-1.346-1.27-1.346z" />
+              </svg>
+            </div>
+            <h3 class="leetcode-title">LeetCode Progress</h3>
+          </div>
+
+          <div class="leetcode-overview">
+            <div class="leetcode-total-progress">
+              <div class="leetcode-total-label">
+                <span>Total Progress</span>
+                <span id="leetcode-total-solved-count">0 / 0</span>
+              </div>
+              <div class="leetcode-total-bar">
+                <div id="leetcode-total-progress-bar" class="leetcode-total-progress-bar" style="width: 0%"></div>
+              </div>
+              <div id="leetcode-total-percentage" class="leetcode-total-percentage">0%</div>
+            </div>
+          </div>
+
+          <div class="leetcode-stats-grid">
+            <div class="leetcode-stat-card">
+              <div id="leetcode-total-solved" class="leetcode-stat-value">0</div>
+              <div class="leetcode-stat-label">Problems Solved</div>
+            </div>
+            <div class="leetcode-stat-card">
+              <div id="leetcode-acceptance-rate" class="leetcode-stat-value">0%</div>
+              <div class="leetcode-stat-label">Acceptance Rate</div>
+            </div>
+            <div class="leetcode-stat-card">
+              <div id="leetcode-ranking" class="leetcode-stat-value">#0</div>
+              <div class="leetcode-stat-label">Global Ranking</div>
+            </div>
+            <div class="leetcode-stat-card">
+              <div id="leetcode-streak" class="leetcode-stat-value">0 days</div>
+              <div class="leetcode-stat-label">Current Streak</div>
+            </div>
+          </div>
+
+          <div class="leetcode-difficulty-breakdown">
+            <h4 class="leetcode-breakdown-title">Difficulty Breakdown</h4>
+            <div class="leetcode-difficulty-bars">
+              <div class="leetcode-difficulty-bar-container">
+                <div class="leetcode-difficulty-label">
+                  <span>Easy</span>
+                  <span id="leetcode-easy-count">0 / 0</span>
+                </div>
+                <div class="leetcode-difficulty-bar">
+                  <div id="leetcode-easy-progress" class="leetcode-difficulty-progress easy" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="leetcode-difficulty-bar-container">
+                <div class="leetcode-difficulty-label">
+                  <span>Medium</span>
+                  <span id="leetcode-medium-count">0 / 0</span>
+                </div>
+                <div class="leetcode-difficulty-bar">
+                  <div id="leetcode-medium-progress" class="leetcode-difficulty-progress medium" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="leetcode-difficulty-bar-container">
+                <div class="leetcode-difficulty-label">
+                  <span>Hard</span>
+                  <span id="leetcode-hard-count">0 / 0</span>
+                </div>
+                <div class="leetcode-difficulty-bar">
+                  <div id="leetcode-hard-progress" class="leetcode-difficulty-progress hard" style="width: 0%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="leetcode-link">
+            <a id="leetcode-profile-link" href="https://leetcode.com/mananambaliya/" target="_blank" rel="noopener noreferrer" class="leetcode-profile-button">
+              View LeetCode Profile
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+                <div class="research-section">
+                    <h4 class="research-title" data-aos="fade-up" data-aos-delay="200">Research & Publications</h4>
+                    <div class="research-items">
+                        <div class="research-item" data-aos="fade-up" data-aos-delay="300">
+                            <h5 class="research-item-title">Transfer Learning-based Emotion Detection System</h5>
+                            <p class="research-item-publisher">Published at IEEE Xplore</p>
+                            <p class="research-item-description">
+                                Planned an emotion detection system with 95.23% accuracy and 2803s training time, enhancing
+                                emotional stability in stressful workplaces.
+                            </p>
+                            <div class="research-item-stats">
+                                <div class="research-stat">
+                                    <div class="research-stat-header">
+                                        <span>Accuracy</span>
+                                        <span>95.23%</span>
+                                    </div>
+                                    <div class="research-stat-bar">
+                                        <div class="research-stat-progress" style="width: 95.23%"></div>
+                                    </div>
+                                </div>
+                                <div class="research-stat">
+                                    <div class="research-stat-header">
+                                        <span>Training Time</span>
+                                        <span>2803s</span>
+                                    </div>
+                                    <div class="research-stat-bar">
+                                        <div class="research-stat-progress" style="width: 93.43%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="research-item" data-aos="fade-up" data-aos-delay="400">
+                            <h5 class="research-item-title">
+                                Hybrid Convolutional Neural Model for Sign Language Recognition
+                            </h5>
+                            <p class="research-item-publisher">Under Revision</p>
+                            <p class="research-item-description">
+                                Illustrated a CNMAMs model with 97.92% accuracy for double-handed & 95.80% for single-handed sign
+                                language recognition.
+                            </p>
+                            <div class="research-item-stats">
+                                <div class="research-stat">
+                                    <div class="research-stat-header">
+                                        <span>Double-handed Accuracy</span>
+                                        <span>97.92%</span>
+                                    </div>
+                                    <div class="research-stat-bar">
+                                        <div class="research-stat-progress" style="width: 97.92%"></div>
+                                    </div>
+                                </div>
+                                <div class="research-stat">
+                                    <div class="research-stat-header">
+                                        <span>Single-handed Accuracy</span>
+                                        <span>95.8%</span>
+                                    </div>
+                                    <div class="research-stat-bar">
+                                        <div class="research-stat-progress" style="width: 95.8%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-subtitle">Contact</h2>
+                    <h3 class="section-title">Let's Connect</h3>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                        <p class="contact-intro">
+                            Feel free to reach out for collaborations, opportunities, or just to say hello. I'm always open to
+                            discussing new projects and ideas.
+                        </p>
+                        <div class="contact-methods">
+                            <a href="mailto:mananambaliya7010@gmail.com" class="contact-method" data-aos="fade-up" data-aos-delay="200">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4 class="contact-method-title">Email</h4>
+                                    <p class="contact-method-value">mananambaliya7010@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+12404954804" class="contact-method" data-aos="fade-up" data-aos-delay="300">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="phone"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4 class="contact-method-title">Phone</h4>
+                                    <p class="contact-method-value">+1 240-495-4804</p>
+                                </div>
+                            </a>
+                            <a href="https://maps.app.goo.gl/Ld9Ue9Ld9Ue9" class="contact-method" data-aos="fade-up" data-aos-delay="350">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="map-pin"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4 class="contact-method-title">Location</h4>
+                                    <p class="contact-method-value">College Park, Maryland, USA</p>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/manan-ambaliya-65806217a/" target="_blank" rel="noopener noreferrer" class="contact-method" data-aos="fade-up" data-aos-delay="400">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="linkedin"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4 class="contact-method-title">LinkedIn</h4>
+                                    <p class="contact-method-value">Connect on LinkedIn</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                        <div id="form-success" class="form-success" style="display: none;">
+                            <div class="success-icon">
+                                <i data-lucide="check"></i>
+                            </div>
+                            <h3 class="success-title">Message Sent!</h3>
+                            <p class="success-message">Thank you for reaching out. I'll get back to you as soon as possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">© <span id="current-year"></span> Manan Ambaliya. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/manan-ambaliya-65806217a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/MananxRobin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="mailto:mananambaliya7010@gmail.com" aria-label="Email">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
